@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <title>專業房地產代理 - 即將推出</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .container { text-align: center; padding: 40px 20px; max-width: 700px; }
+    h1 { font-size: 3.5em; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+    p { font-size: 1.4em; margin-bottom: 40px; opacity: 0.9; }
+    .subscribe { background: rgba(255,255,255,0.1); padding: 40px; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    form { display: flex; gap: 15px; max-width: 500px; margin: 0 auto; flex-wrap: wrap; }
+    input[type="email"] { flex: 1; padding: 18px 25px; font-size: 1.2em; border: none; border-radius: 50px; background: rgba(255,255,255,0.9); min-width: 250px; }
+    button { padding: 18px 40px; font-size: 1.2em; background: linear-gradient(45deg, #ff6b6b, #ff8e8e); color: white; border: none; border-radius: 50px; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; font-weight: bold; }
+    button:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255,107,107,0.4); }
+    .social { margin-top: 50px; }
+    .social a { color: white; margin: 0 15px; font-size: 1.5em; text-decoration: none; opacity: 0.8; transition: opacity 0.3s; }
+    .social a:hover { opacity: 1; }
+    @media (max-width: 768px) { h1 { font-size: 2.5em; } form { flex-direction: column; } input { min-width: auto; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏢 專業房地產</h1>
+    <p>九龍頂尖物業投資專家<br>高端住宅 • 商業樓宇 • 投資諮詢<br>更多精彩內容，敬請期待！</p>
+    <div class="subscribe">
+      <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+        <input type="email" name="email" placeholder="輸入電郵，獲取首發樓盤資訊" required>
+        <input type="hidden" name="_subject" value="新訂閱：Coming Soon 頁">
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit">立即訂閱</button>
+      </form>
+    </div>
+    <div class="social">
+      <a href="https://wa.me/85212345678" title="WhatsApp">📱</a>
+      <a href="https://t.me/yourchannel" title="Telegram">✈️</a>
+      <a href="https://facebook.com/yourpage" title="Facebook">📘</a>
+    </div>
+  </div>
+</body>
+</html>
